@@ -975,7 +975,7 @@ nav ul li a:hover {
   box-shadow: 0 6px 20px rgba(115, 168, 206, .4)
 }
 
-@media (max-width:1206px) {
+@media (max-width:1253px) {
   .banner-container {
     min-height: clamp(1000px, 130vh, 1500px)
   }
@@ -1031,7 +1031,7 @@ nav ul li a:hover {
   }
 }
 
-@media (max-width:1440px) {
+@media (max-width:1448px) {
   .text-overlay h1 {
     padding-left: 0rem;
   }
@@ -1051,14 +1051,21 @@ nav ul li a:hover {
   }
 }
 
-@media (max-width:1280px) {
+@media (max-width:1288px) {
   header {
     width: 85%
   }
-
+  
   .login-overlay {
-    top: 15%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 70%;
+    bottom: clamp(60px, 10vw, 120px);
+    animation: fadeIn .6s ease-out;
+    text-align: center;
+    align-items: center
   }
+
   
   .inria-regular {
     font-size: clamp(22px, 6vw, 0px);
